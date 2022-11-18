@@ -1,0 +1,319 @@
+   /*reset*/
+
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+
+
+   /*estilos de body*/
+
+   body{
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
+         
+   }
+
+
+  
+   /* estilos de menu*/
+
+   .navbar-nav .nav-link{   
+        top: 0%; 
+        color: black;    
+                
+    }
+
+    .navbar-nav .nav-link:hover{   
+      color: orange;    
+              
+   }    
+
+
+
+    /* estilos de home*/
+
+    /* estilos de main*/
+       
+    main .contenedor-uno{
+         background-color: black;
+         height: 30rem;
+         overflow: hidden; 
+         display: flex;
+         flex-flow: row nowrap;
+         align-items: center;
+         justify-content: space-around;
+         
+         
+    }
+
+   .contenedor-uno h1{          
+        color: white;  
+   }
+
+   .contenedor-uno img{    
+      height: 30rem;     
+    }
+
+   main .contenedor-dos{
+      height:70%;
+      width: 70%;
+      padding: 5%;
+   }
+   
+    
+    
+   /* estilos de footer*/
+    
+    footer{
+        background-color: white; 
+        height: 5rem;  
+        padding-top: 1.5rem;     
+    
+        
+      } 
+
+      footer .social{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: center;      
+
+      }
+
+
+
+   /* estilos de about*/
+
+     .banner-about {
+      display: flex;     
+      flex-direction: row; 
+      align-items: center;      
+      justify-content: space-around;
+      padding-top: 10%;
+      
+      }
+
+     .banner-about .info{
+        text-transform: uppercase ;
+       
+        
+     }
+
+
+     .banner-about .imagen-about img{
+         height: 20rem;
+     
+      }
+
+     .years{      
+         display: flex;     
+         flex-direction: column; 
+         align-items: center;
+         justify-content: space-evenly           
+                  
+     }
+
+   
+     .years .contenedor-about{      
+      display: flex;    
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-evenly;  
+      padding-top: 2rem;   
+      padding-left: 2rem;
+        
+   
+  }
+     
+         
+      .years .contenedor-about .numero{
+        font-size: 100px;
+        font-weight: bold;
+        color: aqua;
+     }
+
+      
+           
+     .tools {
+        background-color: black;   
+        margin-top: 10px;
+        padding-top: 10px;   
+        
+        
+       } 
+
+      .tools .logos{
+        display: flex;     
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center; 
+
+      }
+
+      .tools h4{
+        color: white;
+        text-align: center;
+      }
+
+
+
+     /* estilos de projects*/
+
+     .banner-projects{        
+         display: flex;     
+         flex-direction: row; 
+         align-items: center;
+         justify-content: center;
+         justify-content: space-around;
+         padding-top: 2rem;
+         padding-bottom:  2rem;
+
+      }
+
+      .banner-projects p{
+         text-transform: uppercase ;
+ 
+      }
+        
+               
+     
+     /* estilos de services*/
+    
+
+     main .banner-servicies {    
+         display: flex;  
+         flex-direction: row; 
+         justify-content: space-evenly;
+      
+     }
+
+    
+     .banner-services h3{
+        color:fuchsia;
+        font-size: 40px;     
+      }
+      
+             
+
+     main .contenedor-services{
+        height: 20rem ;
+        background-color: rgb(209, 209, 209);
+        text-align: center;
+        padding: 20px;
+        display: flex;  
+        flex-direction: row; 
+        justify-content: space-evenly;
+
+     }
+
+     main .contenedor-services h4:hover{      
+      text-align: center;
+      font-size: 2rem;
+
+   }
+
+ 
+
+     
+      /* estilos de contact*/
+
+      .container{      
+      
+         display: grid;
+         grid-template-columns: 1fr 2fr 1fr 2fr;
+         grid-template-rows:2fr 2fr ;
+     
+         grid-template-areas: 
+         "header header header section"
+         "main main main section";
+
+      }
+
+     
+      form .btn{
+         background-color: fuchsia;
+         width: 100px;
+         padding: 5px;
+
+      }
+
+      #exampleInputPassword1{
+         height: 8rem;
+      }
+
+      
+
+
+/*md*/
+
+
+
+@media (max-width: 600px) {
+
+   /* estilos de home*/
+
+   main .contenedor-uno{
+      height: 10rem;
+           
+           
+   }
+
+   main .contenedor-uno img{
+      height: 10rem;
+         
+         
+   }
+
+   main .contenedor-dos{
+      height: 80%;
+      width: 80%;
+      margin-bottom: 2rem;
+      
+   }
+
+      
+
+
+   /* estilos de about*/
+
+   .banner-about {    
+      display: flex;      
+      flex-direction: column;
+      padding: 2rem;
+      
+      }
+
+
+      .years .contenedor-about{      
+         display: flex;    
+         flex-direction: column;
+        
+   
+     }  
+
+   
+     .tools .logos{
+      display: flex;     
+      flex-direction: column; 
+      
+
+    }
+
+    /* estilos de services*/
+    
+
+    main .contenedor-services {    
+      display: flex;  
+      flex-direction: column;
+   
+  }
+   
+
+
+
+
+
+}
